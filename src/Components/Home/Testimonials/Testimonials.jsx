@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
-import Marquee from "@/components/ui/marquee";
-import Emily from "@/assets/emily.jpg";
-import Alex from "@/assets/alex.jpeg";
-import David from "@/assets/David.jpeg";
-import Sophia from "@/assets/sofie.jpeg";
-import sarah from "@/assets/sarah.jpeg";
-import michael from "@/assets/mike.jpeg";
+import Marquee from "../../ui/marquee";
+import Emily from "../../../assets/Emily.jpg";
+import Alex from "../../../assets/alex.jpeg";
+import David from "../../../assets/David.jpeg";
+import Sophia from "../../../assets/sofie.jpeg";
+import sarah from "../../../assets/sarah.jpeg";
+import michael from "../../../assets/mike.jpeg";
 
 
 const reviews = [
