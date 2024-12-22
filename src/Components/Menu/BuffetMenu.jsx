@@ -6,7 +6,7 @@ import Tibs from "../../assets/awaze.jpg"
 import Lasagna from "../../assets/Lasagna.jpg"
 import RoastedChicken from "../../assets/roasted_chicken.jpg"
 import BeefStraganoff from "../../assets/beef_straganoff.jpg"
-import Steak from "../../assets/steak.jpeg"
+import Steak from "../../assets/Steak.jpeg"
 import SigaWot from "../../assets/siga_wot.avif"
 import Salad from "../../assets/salad.jpg"
 
