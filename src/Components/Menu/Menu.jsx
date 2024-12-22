@@ -4,7 +4,7 @@ import BuffetMenu from './BuffetMenu';
 import CocktailMenu from './CocktailMenu';
 import RefreshmentsMenu from './RefreshmentsMenu';
 import ToGoPackages from './ToGoPackages';
-import { BorderBeam } from "@/components/ui/border-beam";
+import { BorderBeam } from "../ui/border-beam";
 // import FadeInSection from '../FadeInSection/FadeInSection';
 
 import Footer from '../Footer/Footer'
