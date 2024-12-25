@@ -5,6 +5,7 @@ import corporate from "../../assets/corprate.jpg"
 import funeral from "../../assets/funeral.jpg"
 import grad from "../../assets/grad.jpg"
 import portfolio from "../../assets/portfolio.jpg"
+import Footer from "../Footer/Footer";
 
 const CateringPortfolio = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -316,6 +317,7 @@ const CateringPortfolio = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
