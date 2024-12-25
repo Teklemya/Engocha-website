@@ -213,7 +213,7 @@ const CateringPortfolio = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-amber-50">
       {/* Hero Section */}
-      <div className="relative h-64 mb-12 overflow-hidden">
+      <div className="relative h-64 md:h-96 lg:h-[24rem] mb-12 overflow-hidden">
         <div className="absolute inset-0 bg-black/40" />
         <img 
           src= {portfolio} 
