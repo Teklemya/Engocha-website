@@ -129,7 +129,7 @@ const ContactPage = () => {
                   <label className="block text-sm font-medium text-gray-700">Name</label>
                   <input
                     type="text"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
                     required
                   />
                 </div>
@@ -138,7 +138,7 @@ const ContactPage = () => {
                   <label className="block text-sm font-medium text-gray-700">Email</label>
                   <input
                     type="email"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
                     required
                   />
                 </div>
@@ -147,7 +147,7 @@ const ContactPage = () => {
                   <label className="block text-sm font-medium text-gray-700">Message</label>
                   <textarea
                     rows={4}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
+                    className="mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3"
                   />
                 </div>
 
