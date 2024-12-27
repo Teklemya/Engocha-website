@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { Button } from '../ui/buttons';
+import { Button } from '../ui/button';
 import { Link } from 'react-router-dom';
 import { BorderBeam } from "../ui/border-beam";
 import Footer from '../Footer/Footer';
