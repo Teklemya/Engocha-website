@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { ChefHat } from 'lucide-react';
 import simple from "../../assets/wedding.jpg"
 import corporate from "../../assets/corprate.jpg"
@@ -210,6 +210,36 @@ const CateringPortfolio = () => {
     ? portfolioItems 
     : portfolioItems.filter(item => item.category === activeCategory);
 
+   const [isVisible, setIsVisible] = useState(false);
+        const sectionRef = useRef(null);
+      
+        useEffect(() => {
+          const observer = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                setIsVisible(true);
+                // Disconnect the observer after the section becomes visible
+                observer.unobserve(entry.target);
+              }
+            },
+            {
+              // Trigger when at least 10% of the section is visible
+              threshold: 0.1,
+            }
+          );
+      
+          if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+          }
+      
+          // Cleanup the observer on component unmount
+          return () => {
+            if (sectionRef.current) {
+              observer.unobserve(sectionRef.current);
+            }
+          };
+        }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-amber-50">
       {/* Hero Section */}
@@ -286,7 +316,11 @@ const CateringPortfolio = () => {
     ))}
   </div>
 </div>
-
+<div ref={sectionRef} className={`container mx-auto px-4 py-12 transition-all duration-1000 ease-out 
+          ${isVisible 
+            ? 'opacity-100 translate-y-0' 
+            : 'opacity-0 translate-y-5'
+          }`}> 
       {/* Portfolio Grid */}
       <div className="container mx-auto px-4 mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -318,6 +352,7 @@ const CateringPortfolio = () => {
         </div>
       </div>
       <Footer />
+    </div>
     </div>
   );
 };
