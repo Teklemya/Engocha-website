@@ -351,8 +351,8 @@ const CateringPortfolio = () => {
           ))}
         </div>
       </div>
-      <Footer />
-    </div>
+     
+    </div> <Footer />
     </div>
   );
 };
